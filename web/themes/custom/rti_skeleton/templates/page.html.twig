@@ -1,0 +1,74 @@
+<!-- 1st row -->
+<div class="container-fluid padding" role="navigation">
+   <div class="row header">
+      <div class="col-3">
+          {{ page.logo }}
+      </div>
+        <div class="col-6">
+          {{ page.primary_menu }}
+        </div>
+        <div class="col-3">
+            <div class="navbar">
+                <div class="usernotification"> 
+                  <a class="active" href="#"><i class="fa fa fa-bell"></i></a>
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="flex-container">
+                  <div><a href="#"> {{ user.displayname }}</a></div>
+                  <div><a href="#"> {{ jobtitle }}</a></div>
+                </div>
+                <div class="userdropdown">
+                <a href="#"><i class="far fa-caret-square-down"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Header -->
+
+<!-- 2nd row -->
+<div class="container-fluid padding">
+    <div class="row bg">
+      <div class="col-3">
+        {{ page.sidebar_first }}
+      </div>
+      
+      <div class="col-9">
+        <div class="row padding">
+                <div class="col-12 padding search">
+                  {{ page.search }} 
+                </div>
+        </div>
+        <div class="row file-summery">
+            <div class="col">2589 Files</div>
+            <div class="col">34 Projects</div>
+            <div class="col">52 releases</div>
+            <div class="col">16 Contributors</div>
+        </div>
+ 
+        <div class="row">
+            <div class="col-3 margin-left">
+              {{ page.sidebar_second }}
+            </div>
+            <div class="col-9 rti-table padding">
+                {{ page.content }}
+            </div>
+        </div>
+      </div>
+      
+    </div>
+</div>
+
+
+<!-- Footer -->
+
+<div class="container-fluid">
+  <div>
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+</div>{# /.layout-container #}
+</div> 

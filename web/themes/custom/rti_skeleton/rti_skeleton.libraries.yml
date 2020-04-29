@@ -1,0 +1,28 @@
+global-css:
+  version:  1.0
+  css:
+    theme:
+      css/style.css: {}
+      css/menu.css: {}
+  js:
+    js/global.js: {}
+    js/script.js: {}
+    js/modal.js: {}
+
+bootstrap:
+  version: 1.0
+  css:
+    base:
+      bootstrap/css/bootstrap.css: {}
+      bootstrap/css/bootstrap.min.css: { weight: 0 }
+  js:
+    bootstrap/js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery
+
+
+fontawesome_5:
+  version: 1.0
+  css:
+    component:
+      //use.fontawesome.com/releases/v5.1.0/css/all.css: {}
