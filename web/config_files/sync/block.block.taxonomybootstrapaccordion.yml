@@ -1,0 +1,23 @@
+uuid: 58f96f08-380a-4f0e-8690-5b84df377ae7
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_bootstrap_accordion
+  theme:
+    - bartik
+id: taxonomybootstrapaccordion
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: taxonomy_menu_block
+settings:
+  id: taxonomy_menu_block
+  label: 'Taxonomy Bootstrap Accordion'
+  provider: taxonomy_bootstrap_accordion
+  label_display: visible
+  vocabs:
+    directory: directory
+    tags: 0
+visibility: {  }
