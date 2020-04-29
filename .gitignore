@@ -20,7 +20,6 @@
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
 sites/*/services*.yml
-sites/*/settings.php
 
 # Ignore paths that may contain user-generated content
 /sites/*/files
@@ -41,6 +40,7 @@ sites/*/settings.php
 /core
 /vendor
 /modules/README.txt
+/modules/contrib/
 /profiles/README.txt
 /themes/README.txt
 /sites/README.txt
