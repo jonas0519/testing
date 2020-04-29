@@ -39,7 +39,7 @@ sites/*/services*.yml
 /core
 /vendor
 /modules/README.txt
-/modules/contrib/
+/modules/contrib
 /profiles/README.txt
 /themes/README.txt
 /themes/contrib/
