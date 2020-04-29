@@ -1,0 +1,8 @@
+uuid: a65ee35e-c915-45ec-828d-d18525178db6
+langcode: en
+status: true
+dependencies: {  }
+name: Directory
+vid: directory
+description: ''
+weight: 0
