@@ -1,0 +1,8 @@
+helloworld.helloworld:
+  # Menu link title
+  title: 'Hello World'
+  # Route to use
+  route_name: helloworld.content
+  # Menu in which to place the link
+  menu_name: main
+  weight: 1
