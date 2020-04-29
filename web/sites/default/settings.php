@@ -761,4 +761,4 @@ $settings['entity_update_backup'] = TRUE;
    include $app_root . '/' . $site_path . '/settings.local.php';
  }
 
-$settings['config_sync_directory'] = 'config_files/sync';
+$settings['config_sync_directory'] = 'web/config_files/sync';
