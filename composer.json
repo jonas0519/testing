@@ -20,6 +20,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/devel": "^2.1",
+        "drupal/pathauto": "^1.8",
         "drupal/taxonomy_bootstrap_accordion": "^1.1",
         "drupal/token": "^1.7",
         "drupal/views_accordion": "^1.3"
