@@ -47,3 +47,9 @@ web/sites/README.txt
 web/sites/example.settings.local.php
 web/.gitignore
 web/*/.gitignore
+web/.csslintrc
+web/.eslintignore
+web/.eslintrc.json
+web/.ht.router.php
+web/INSTALL.txt
+web/README.txt
