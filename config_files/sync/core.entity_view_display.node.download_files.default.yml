@@ -1,0 +1,38 @@
+uuid: bfb4e873-a918-47c6-9d58-3be545d60bac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.download_files.body
+    - field.field.node.download_files.field_upload_file
+    - node.type.download_files
+  module:
+    - file
+    - text
+    - user
+id: node.download_files.default
+targetEntityType: node
+bundle: download_files
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_upload_file:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
