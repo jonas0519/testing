@@ -11,6 +11,7 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   devel: 0
@@ -44,6 +45,7 @@ module:
   taxonomy: 0
   taxonomy_bootstrap_accordion: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   user: 0
@@ -52,6 +54,7 @@ module:
   views_exposed_filter_blocks: 0
   views_ui: 0
   menu_link_content: 1
+  pathauto: 1
   views: 10
   paragraphs: 11
   standard: 1000
