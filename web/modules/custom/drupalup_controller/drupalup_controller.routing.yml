@@ -5,3 +5,11 @@ drupalup_controller.article_list:
     _title: 'Our custom Article list'
   requirements:
     _permission: 'access content'
+
+drupalup_controller.links:
+  path: '/example/page/links'
+  defaults:
+    _controller: '\Drupal\drupalup_controller\Controller\ArticleController::links'
+  requirements:
+    _permissions: 'access content'
+    _access: 'TRUE'
