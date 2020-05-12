@@ -1,0 +1,23 @@
+uuid: 6cfa46a9-220d-4908-8be6-60e39b8b9d68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.appointment
+  module:
+    - text
+id: node.appointment.body
+field_name: body
+entity_type: node
+bundle: appointment
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
