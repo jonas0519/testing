@@ -1,6 +1,0 @@
-myarticle:
-  path: '/myarticle/{nid}'
-  defaults:
-    _controller: '\Drupal\myarticle\Controller\MyarticleController::content'
-  requirements:
-    _permission: 'access content'

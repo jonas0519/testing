@@ -1,5 +1,0 @@
-name: My Article
-type: module
-description: 'This module is creating my Custom Article'
-package: Custom
-core: 8.x
