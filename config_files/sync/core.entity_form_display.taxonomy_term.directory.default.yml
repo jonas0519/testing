@@ -1,0 +1,55 @@
+uuid: 8d394fd0-e5d7-4560-92f0-864c8ba7d26e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.directory.field_created
+    - taxonomy.vocabulary.directory
+  module:
+    - path
+    - text
+id: taxonomy_term.directory.default
+targetEntityType: taxonomy_term
+bundle: directory
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_created:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+hidden: {  }

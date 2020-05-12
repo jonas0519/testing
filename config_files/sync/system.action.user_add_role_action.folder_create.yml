@@ -1,0 +1,14 @@
+uuid: 123f4f8f-5f35-4507-bd4f-4dbb06e0270e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.folder_create
+  module:
+    - user
+id: user_add_role_action.folder_create
+label: 'Add the Folder Create role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: folder_create

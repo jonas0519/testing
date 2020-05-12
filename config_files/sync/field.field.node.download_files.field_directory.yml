@@ -1,0 +1,29 @@
+uuid: 45f07e7c-3032-4b91-8ee4-29f70bf0dfbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_directory
+    - node.type.download_files
+    - taxonomy.vocabulary.directory
+id: node.download_files.field_directory
+field_name: field_directory
+entity_type: node
+bundle: download_files
+label: Directory
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      directory: directory
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

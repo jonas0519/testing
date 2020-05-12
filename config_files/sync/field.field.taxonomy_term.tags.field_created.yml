@@ -1,0 +1,29 @@
+uuid: eaabf2d4-bb7c-4cde-acf6-f1e9e674ac68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_created
+    - taxonomy.vocabulary.tags
+  content:
+    - 'user:user:d32a3018-cb90-4d2d-a6f0-4b2baca55f9f'
+id: taxonomy_term.tags.field_created
+field_name: field_created
+entity_type: taxonomy_term
+bundle: tags
+label: Created
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: d32a3018-cb90-4d2d-a6f0-4b2baca55f9f
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: users
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

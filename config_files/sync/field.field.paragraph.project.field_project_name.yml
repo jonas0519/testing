@@ -1,0 +1,19 @@
+uuid: 2beb9c3f-0822-4d26-9f48-bd28d3fe0e95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_project_name
+    - paragraphs.paragraphs_type.project
+id: paragraph.project.field_project_name
+field_name: field_project_name
+entity_type: paragraph
+bundle: project
+label: 'Project Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

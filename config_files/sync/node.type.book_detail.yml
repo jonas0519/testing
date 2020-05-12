@@ -1,0 +1,16 @@
+uuid: 7593ab7b-ca4c-425c-9e40-4830aa0e736b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - book_detail
+_core:
+  default_config_hash: lAc21KHwNP5zYtRlxc8G5zhacyAuk_35M-Y2BKRgLEE
+name: 'Book Detail'
+type: book_detail
+description: 'Content type that can be used to add <em>Book information</em> page.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
