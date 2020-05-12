@@ -1,0 +1,50 @@
+<?php
+
+use Drupal\node\NodeInterface;
+
+function myarticle_node_insert (NodeInterface $entity) {
+
+
+	//$nid = $node->nid->value;
+
+	if($entity->getType()=='article') {
+		$title = $entity->get('title')->value;
+		$body = $entity->get('body')->value;
+		$field_tags = $entity->get('field_tags')->referencedEntities();
+		$field_tags_value = $field_tags[0]->getName();
+
+
+		//$field_tags_value1->set('field_tags_value', $field_tags_value);
+		
+		//$term = \Drupal\taxonomy\Entity\Term::load($node->get('field_destination')->target_id);
+
+		//echo $field_tags[0]->getName();
+		//echo var_dump($field_tags);
+		//exit();
+ 
+
+     	$serialized_entity = json_encode([
+     		'title' => [['value' => $title]],
+      		'body' => [['value' => $body]],
+      		'field_tags' => [['value' => $field_tags_value]],
+      		'type' => [['target_id' => 'article']],
+      		'_links' => ['type' => ['href' => 'http://localhost/d8multisite/rest/type/node/article']],
+     	]);
+
+     	$response = \Drupal::httpClient()->post('http://localhost/d8multisite/entity/node?_format=hal_json', [
+    		'auth' => ['admin', 'admin'],
+    		'body' => $serialized_entity,
+    		'headers' => ['Content-Type' => 'application/hal+json',
+      		'X-CSRF-Token' => 'EGhxMA8TyZAerTvV_hWi6g_841WK1XbsxYOtxpDsAMk'],
+  		]);
+
+	  	if($response) {
+		  	\Drupal::logger('myarticle')->notice("The article is created");
+		 }
+		else {
+			\Drupal::logger('myarticle')->error("Error while creating");
+  		}
+
+     }
+
+}

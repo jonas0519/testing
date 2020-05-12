@@ -1,0 +1,7 @@
+myhookform.content:
+  path: '/myhookform'
+  defaults:
+    _controller: '\Drupal\myhookform\Controller\MyfirstController::content'
+    _title: 'My first page and menu link path'
+  requirements:
+    _permission: 'access content'

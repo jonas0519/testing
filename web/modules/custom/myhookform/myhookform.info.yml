@@ -1,0 +1,6 @@
+name: My hook form alter Module
+description: 'This module is described the hook form alter'
+type: module
+package: Custom
+core: 8.x
+
