@@ -1,0 +1,14 @@
+uuid: 530a200c-0e93-4db8-9dd2-333dc1ab3b7b
+langcode: en
+status: true
+dependencies: {  }
+id: folder_create
+label: 'Folder Create'
+weight: 3
+is_admin: null
+permissions:
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'create terms in directory'
+  - 'edit terms in directory'

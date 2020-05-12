@@ -4,29 +4,23 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.download_files.body
+    - field.field.node.download_files.field_directory
+    - field.field.node.download_files.field_project
     - field.field.node.download_files.field_upload_file
     - node.type.download_files
   module:
-    - text
     - user
 id: node.download_files.teaser
 targetEntityType: node
 bundle: download_files
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
+  field_directory: true
+  field_project: true
   field_upload_file: true

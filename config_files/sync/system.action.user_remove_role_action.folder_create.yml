@@ -1,0 +1,14 @@
+uuid: 4275f943-87fe-4af5-8131-3d218cc3bfb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.folder_create
+  module:
+    - user
+id: user_remove_role_action.folder_create
+label: 'Remove the Folder Create role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: folder_create

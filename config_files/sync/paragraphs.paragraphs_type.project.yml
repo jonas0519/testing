@@ -1,0 +1,10 @@
+uuid: fa6f6fb2-6bc0-4c07-8327-cdc1eacc45af
+langcode: en
+status: true
+dependencies: {  }
+id: project
+label: Project
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

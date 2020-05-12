@@ -1,0 +1,23 @@
+uuid: 8ac7a3fa-fe71-4221-a0c9-8f8f7180d4a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.project.field_project_name
+    - paragraphs.paragraphs_type.project
+id: paragraph.project.default
+targetEntityType: paragraph
+bundle: project
+mode: default
+content:
+  field_project_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

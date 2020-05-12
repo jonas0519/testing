@@ -1,0 +1,31 @@
+uuid: 1e35c2e4-f863-4fba-9dfe-4c6d55954a42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project
+    - node.type.download_files
+    - paragraphs.paragraphs_type.project
+  module:
+    - entity_reference_revisions
+id: node.download_files.field_project
+field_name: field_project
+entity_type: node
+bundle: download_files
+label: Project
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      project: project
+    target_bundles_drag_drop:
+      project:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions
