@@ -1,0 +1,15 @@
+mymodule.mydata:
+  path: '/mydata'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\MyModuleController::content'
+    _title: 'File Manager'
+  requirements:
+    _permission: 'access content'
+
+mymodule.form:
+  path: '/createfolder'
+  defaults:
+    _form: '\Drupal\mymodule\Form\MyModuleForm'
+    _title: 'Create Folder Form'
+  requirements:
+    _permission: 'access content'
