@@ -16,10 +16,12 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "drupal/calendar": "^1.0@alpha",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/devel": "^2.1",
+        "drupal/group": "^1.0@RC",
         "drupal/other_view_filter": "^1.1",
         "drupal/paragraphs": "^1.11",
         "drupal/pathauto": "^1.8",
