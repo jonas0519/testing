@@ -1,0 +1,5 @@
+name: 'Login Redirect Module'
+type: module
+description: 'User Redirect Module'
+package: Custom
+core: 8.x

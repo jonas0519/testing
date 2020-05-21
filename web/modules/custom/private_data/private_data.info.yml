@@ -1,0 +1,5 @@
+name: Private data Module
+description: 'This module is described about the private data'
+type: module
+package: Custom
+core: 8.x

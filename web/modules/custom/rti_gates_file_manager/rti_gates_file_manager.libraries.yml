@@ -1,0 +1,13 @@
+rti_gates_file_manager:
+ version: 1.x
+ css:
+  layout:
+    css/style.css: {}
+    css/filedragstyle.css: {}
+ js:
+  js/helpers.js: {}
+  js/brackitjs.js: {}
+  js/filedrag.js: {}
+ dependencies:
+  - core/jquery
+  - core/jquery.ui

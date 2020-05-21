@@ -1,0 +1,4 @@
+name: 'My sample modules'
+description: 'This is my sample modules'
+type: module
+core: 8.x

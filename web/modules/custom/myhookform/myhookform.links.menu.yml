@@ -1,0 +1,6 @@
+myhookform.newpage:
+  title: 'My hook Form'
+  description: 'Link to the page'
+  route_name: myhookform.content
+  weight: 10
+  menu_name: main 

@@ -1,0 +1,5 @@
+name: RTI Gates File Manager
+type: module
+description: 'This modules provides functionalities for File Manager'
+package: RTI_GATES
+core: 8.x

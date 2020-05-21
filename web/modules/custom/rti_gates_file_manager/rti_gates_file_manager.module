@@ -1,0 +1,24 @@
+<?php
+
+/** Create a theme function that maps your custom name to a template */
+function rti_gates_file_manager_theme()
+{
+  return array(
+    // Name to be called with theme(). theme('file_submit_th', $images)
+    'file_submit_th' => array(
+      // Default variables
+      'variables' => array(
+        'submit_field' => null 
+      ),
+      'template' => 'file-submit-th',
+      'path' => drupal_get_path('module', 'rti_gates_file_manager') . '/templates')
+   
+  );
+}
+
+/**
+ * Implements hook_node_insert().
+ */
+function rti_gates_file_manager_node_insert(Drupal\Core\Entity\EntityInterface $entity) {
+   \Drupal::logger('rti_gates_file_manager')->info('We just created a node.');
+}

@@ -1,0 +1,7 @@
+private_data.private_content:
+  path: '/private'
+  defaults:
+    _controller: '\Drupal\private_data\Controller\PrivateDataController::privateContent'
+    _title: 'Hello world'
+  requirements:
+    _permission: 'access premium pages'

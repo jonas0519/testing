@@ -1,0 +1,29 @@
+rti_gates_file_manager.report:
+  path: '/rti_gates_file_manager/file_reports'
+  defaults:
+    _controller: '\Drupal\rti_gates_file_manager\Controller\RTIGatesFileManagerController::report'
+    _title: 'List of Files'
+  requirements:
+    _permission: 'view file list'
+
+rti_gates_file_manager.upload:
+  path: '/rti_gates_file_manager/upload'
+  defaults:
+    _controller: '\Drupal\rti_gates_file_manager\Controller\RTIGatesFileManagerController::upload'
+  requirements:
+    _permission: 'access content'
+
+rti_gates_file_manager.getDirectories:
+  path: '/rti_gates_file_manager/getDirectories'
+  defaults:
+    _controller: '\Drupal\rti_gates_file_manager\Controller\RTIGatesFileManagerController::getDirectories'
+  requirements:
+    _permission: 'access content'
+
+rti_gates_file_manager.add_folder:
+  path: '/add/folder'
+  defaults:
+    _title: 'Add Folder'
+    _form: '\Drupal\rti_gates_file_manager\Form\RTIGatesFileUploadForm'
+  requirements:
+    _permission: 'access content'
