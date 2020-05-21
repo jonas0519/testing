@@ -1,0 +1,23 @@
+uuid: f2c36093-1431-4e7a-929d-61c3c3246d40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.devesh
+  module:
+    - text
+id: node.devesh.body
+field_name: body
+entity_type: node
+bundle: devesh
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

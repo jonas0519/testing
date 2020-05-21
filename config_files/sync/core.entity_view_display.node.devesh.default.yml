@@ -1,0 +1,28 @@
+uuid: ec5e25d7-c7de-44f5-842d-2f9fb353607a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.devesh.body
+    - node.type.devesh
+  module:
+    - text
+    - user
+id: node.devesh.default
+targetEntityType: node
+bundle: devesh
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
