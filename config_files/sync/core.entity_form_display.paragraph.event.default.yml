@@ -1,0 +1,39 @@
+uuid: 6f5a748b-9df3-44ba-a450-04dd122e5b31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.event.field_event_types
+    - field.field.paragraph.event.field_guests
+    - field.field.paragraph.event.field_locations
+    - paragraphs.paragraphs_type.event
+id: paragraph.event.default
+targetEntityType: paragraph
+bundle: event
+mode: default
+content:
+  field_event_types:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_guests:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_locations:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

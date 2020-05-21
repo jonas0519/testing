@@ -1,0 +1,23 @@
+uuid: e3ef001c-5859-42bf-b3a0-633b676cdea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.zelalem
+  module:
+    - text
+id: node.zelalem.body
+field_name: body
+entity_type: node
+bundle: zelalem
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

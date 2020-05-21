@@ -1,0 +1,20 @@
+uuid: 3e98151c-7a42-4b4d-a806-93a1361c376a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_add_guests
+field_name: field_add_guests
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

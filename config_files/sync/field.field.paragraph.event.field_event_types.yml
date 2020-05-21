@@ -1,0 +1,21 @@
+uuid: c2e384e1-9933-4379-8d38-f4d179662a53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event_types
+    - paragraphs.paragraphs_type.event
+  module:
+    - options
+id: paragraph.event.field_event_types
+field_name: field_event_types
+entity_type: paragraph
+bundle: event
+label: 'Event Types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,18 +1,18 @@
-uuid: 1e35c2e4-f863-4fba-9dfe-4c6d55954a42
+uuid: 072585b7-0e68-4842-8691-461874f43015
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_project
-    - node.type.download_files
-    - paragraphs.paragraphs_type.project
+    - field.storage.node.field_event
+    - node.type.calendar_event
+    - paragraphs.paragraphs_type.event
   module:
     - entity_reference_revisions
-id: node.download_files.field_project
-field_name: field_project
+id: node.calendar_event.field_event
+field_name: field_event
 entity_type: node
-bundle: download_files
-label: Project
+bundle: calendar_event
+label: Event
 description: ''
 required: false
 translatable: false
@@ -23,12 +23,12 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      project: project
+      event: event
     target_bundles_drag_drop:
-      event:
-        weight: 3
-        enabled: false
       project:
+        weight: 2
+        enabled: false
+      event:
         enabled: true
-        weight: 4
+        weight: 3
 field_type: entity_reference_revisions

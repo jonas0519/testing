@@ -1,0 +1,18 @@
+uuid: 722e3fe5-d5c9-4152-bc10-3479593dbee5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Calendar Event'
+type: calendar_event
+description: 'Calendar Event'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,25 @@
+uuid: a9d753bb-2b67-4a17-b326-3859ce2fd82f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_guests
+    - node.type.article
+id: node.article.field_add_guests
+field_name: field_add_guests
+entity_type: node
+bundle: article
+label: 'Add Guests'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: list_of_users
+      display_name: entity_reference_1_list_of_users
+      arguments: {  }
+field_type: entity_reference

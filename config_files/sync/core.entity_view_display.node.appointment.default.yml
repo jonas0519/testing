@@ -1,0 +1,39 @@
+uuid: d28e8ee2-cabc-47ae-8537-c567c711eb05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.appointment.body
+    - field.field.node.appointment.field_app_date
+    - node.type.appointment
+  module:
+    - datetime
+    - text
+    - user
+id: node.appointment.default
+targetEntityType: node
+bundle: appointment
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_app_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
