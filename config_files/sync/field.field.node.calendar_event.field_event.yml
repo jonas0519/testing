@@ -25,10 +25,10 @@ settings:
     target_bundles:
       event: event
     target_bundles_drag_drop:
-      project:
-        weight: 2
-        enabled: false
       event:
         enabled: true
         weight: 3
+      project:
+        weight: 2
+        enabled: false
 field_type: entity_reference_revisions
