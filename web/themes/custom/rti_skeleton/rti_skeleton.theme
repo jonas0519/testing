@@ -6,7 +6,7 @@ function rti_skeleton_preprocess_page(&$variables) {
   $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
   
   // get field data from that user
-  $variables['jobtitle'] = $user->get('field_job_title')->value;
+  //$variables['jobtitle'] = $user->get('field_job_title')->value;
   
   // some default getters include
   $email = $user->get('mail')->value;

@@ -1,0 +1,22 @@
+uuid: c8858834-37c1-44f3-8f4e-19b66384f985
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rti_skeleton
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: rti_skeleton_messages
+theme: rti_skeleton
+region: footer
+weight: -9
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

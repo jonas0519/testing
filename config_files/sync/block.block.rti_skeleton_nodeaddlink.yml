@@ -1,0 +1,20 @@
+uuid: dd4f92f8-10ae-420f-a9d0-eecd43388237
+langcode: en
+status: true
+dependencies:
+  module:
+    - modal_form_example
+  theme:
+    - rti_skeleton
+id: rti_skeleton_nodeaddlink
+theme: rti_skeleton
+region: sidebar_second
+weight: -11
+provider: null
+plugin: node_add_link_block
+settings:
+  id: node_add_link_block
+  label: 'Node add link'
+  provider: modal_form_example
+  label_display: visible
+visibility: {  }

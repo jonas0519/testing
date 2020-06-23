@@ -1,0 +1,22 @@
+uuid: 82b9a5ac-40d7-48bb-bc40-5ff15f35c086
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - rti_skeleton
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: rti_skeleton_help
+theme: rti_skeleton
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

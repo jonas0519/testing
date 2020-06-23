@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.event.field_event_types
-    - field.field.paragraph.event.field_guests
     - field.field.paragraph.event.field_locations
     - paragraphs.paragraphs_type.event
 id: paragraph.event.default
@@ -17,14 +16,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_guests:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_locations:
     weight: 2

@@ -1,5 +1,5 @@
-$('#exampleModalCenter').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
+$('#exampleModalCenter').on('shown.bs.modal', function() {
+    $('#myInput').trigger('focus')
 })
 
 /* 

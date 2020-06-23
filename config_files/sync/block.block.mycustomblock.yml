@@ -1,0 +1,20 @@
+uuid: 254a5f60-5243-4f96-8873-c1f48c815851
+langcode: en
+status: true
+dependencies:
+  module:
+    - mycustomblock
+  theme:
+    - rti_skeleton
+id: mycustomblock
+theme: rti_skeleton
+region: sidebar_first
+weight: 0
+provider: null
+plugin: block_mycustomblock
+settings:
+  id: block_mycustomblock
+  label: MyCustomBlock
+  provider: mycustomblock
+  label_display: visible
+visibility: {  }

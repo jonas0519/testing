@@ -13,3 +13,19 @@ drupalup_controller.links:
   requirements:
     _permissions: 'access content'
     _access: 'TRUE'
+
+drupalup_controller.render_block:
+  path: '/render-block'
+  defaults:
+    _controller: '\Drupal\drupalup_controller\Controller\ArticleController::render_block'
+  requirements:
+    _permissions: 'access content'
+    _access: 'TRUE'
+
+drupalup_controller.content:
+  path: '/content'
+  defaults:
+    _controller: '\Drupal\drupalup_controller\Controller\ArticleController::content'
+  requirements:
+    _permissions: 'access content'
+    _access: 'TRUE'

@@ -11,6 +11,11 @@
         e.target.className = (e.type == "dragover" ? "hover" : "");
     }
 
+    function rti_gates_file_manager_ajax_load() {
+        jQuery("#ajax-target").load("/node/get/ajax/11");
+    }
+
+
     // file selection
     function FileSelectHandler(e) {
 

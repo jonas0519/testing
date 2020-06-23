@@ -4,12 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.calendar_event.body
+    - field.field.node.calendar_event.field_add_guestss
+    - field.field.node.calendar_event.field_date
     - field.field.node.calendar_event.field_date_time
     - field.field.node.calendar_event.field_event
     - node.type.calendar_event
   module:
     - datetime
     - entity_reference_revisions
+    - smart_date
     - text
     - user
 id: node.calendar_event.default
@@ -23,6 +26,25 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_add_guestss:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_date:
+    weight: 5
+    label: above
+    settings:
+      format: default
+      force_chronological: false
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: smartdate_default
     region: content
   field_date_time:
     weight: 1

@@ -9,7 +9,7 @@ dependencies:
 id: taxonomybootstrapaccordion
 theme: bartik
 region: sidebar_first
-weight: 0
+weight: -5
 provider: null
 plugin: taxonomy_menu_block
 settings:

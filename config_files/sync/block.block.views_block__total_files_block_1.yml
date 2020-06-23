@@ -5,14 +5,13 @@ dependencies:
   config:
     - views.view.total_files
   module:
-    - system
     - views
   theme:
     - bartik
 id: views_block__total_files_block_1
 theme: bartik
 region: sidebar_first
-weight: -3
+weight: -10
 provider: null
 plugin: 'views_block:total_files-block_1'
 settings:
@@ -22,9 +21,4 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false
-    context_mapping: {  }
+visibility: {  }

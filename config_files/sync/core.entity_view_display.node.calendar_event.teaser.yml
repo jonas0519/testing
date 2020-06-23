@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.calendar_event.body
+    - field.field.node.calendar_event.field_add_guestss
+    - field.field.node.calendar_event.field_date
     - field.field.node.calendar_event.field_date_time
     - field.field.node.calendar_event.field_event
     - node.type.calendar_event
@@ -30,5 +32,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_add_guestss: true
+  field_date: true
   field_date_time: true
   field_event: true

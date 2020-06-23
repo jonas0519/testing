@@ -19,6 +19,17 @@ function rti_gates_file_manager_theme()
 /**
  * Implements hook_node_insert().
  */
+
+ /* 
 function rti_gates_file_manager_node_insert(Drupal\Core\Entity\EntityInterface $entity) {
    \Drupal::logger('rti_gates_file_manager')->info('We just created a node.');
 }
+*/
+
+/**
+* Implements hook_menu().
+*/
+
+
+
+

@@ -15,4 +15,27 @@ class HelloworldController extends ControllerBase {
       '#markup' => t('Hello world'),
     );
   }
+
+  public function render_block () {
+
+    $block_manager = \Drupal::service('plugin.manager.block');
+    // You can hard code configuration or you load from settings.
+    $config = [];
+    $plugin_block = $block_manager->createInstance('system_breadcrumb_block', $config);
+    // Some blocks might implement access check.
+    $access_result = $plugin_block->access(\Drupal::currentUser());
+    // Return empty render array if user doesn't have access.
+    // $access_result can be boolean or an AccessResult class
+    if (is_object($access_result) && $access_result->isForbidden() || is_bool($access_result) && !$access_result) {
+      // You might need to add some cache tags/contexts.
+      return [];
+    }
+    $render = $plugin_block->build();
+    // In some cases, you need to add the cache tags/context depending on
+    // the block implemention. As it's possible to add the cache tags and
+    // contexts in the render method and in ::getCacheTags and 
+    // ::getCacheContexts methods.
+    return $render;
+  }
+
 }

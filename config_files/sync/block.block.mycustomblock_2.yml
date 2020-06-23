@@ -1,0 +1,20 @@
+uuid: 25cea7f6-6763-4a45-a49b-694f6d5134ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - mycustomblock
+  theme:
+    - bartik
+id: mycustomblock_2
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: block_mycustomblock
+settings:
+  id: block_mycustomblock
+  label: MyCustomBlock
+  provider: mycustomblock
+  label_display: visible
+visibility: {  }

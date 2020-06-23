@@ -1,0 +1,36 @@
+uuid: 5718b5a9-d98c-4fe3-ae7e-4b7b54b1ebc4
+langcode: en
+status: true
+dependencies:
+  module:
+    - hierarchical_taxonomy_menu
+  theme:
+    - bartik
+id: hierarchicaltaxonomymenu
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: hierarchical_taxonomy_menu
+settings:
+  id: hierarchical_taxonomy_menu
+  label: 'Hierarchical Taxonomy Menu'
+  provider: hierarchical_taxonomy_menu
+  label_display: visible
+  vocabulary: directory|
+  max_depth: 100
+  dynamic_block_title: false
+  collapsible: true
+  stay_open: true
+  interactive_parent: true
+  hide_block: false
+  use_image_style: false
+  image_height: 16
+  image_width: 16
+  image_style: large
+  max_age: '0'
+  base_term: ''
+  dynamic_base_term: false
+  show_count: false
+  calculate_count_recursively: false
+visibility: {  }

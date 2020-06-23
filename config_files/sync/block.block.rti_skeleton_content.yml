@@ -1,0 +1,22 @@
+uuid: ce45280c-496e-460a-903c-d0d871cc3b92
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rti_skeleton
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: rti_skeleton_content
+theme: rti_skeleton
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

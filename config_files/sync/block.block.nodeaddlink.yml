@@ -9,7 +9,7 @@ dependencies:
 id: nodeaddlink
 theme: bartik
 region: sidebar_first
-weight: 0
+weight: -6
 provider: null
 plugin: node_add_link_block
 settings:

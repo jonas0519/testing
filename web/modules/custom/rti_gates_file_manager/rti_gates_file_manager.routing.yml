@@ -27,3 +27,10 @@ rti_gates_file_manager.add_folder:
     _form: '\Drupal\rti_gates_file_manager\Form\RTIGatesFileUploadForm'
   requirements:
     _permission: 'access content'
+
+rti_gates_file_manager.get_ajax:
+  path: '/node/get/ajax/{nid}'
+  defaults:
+    _controller: '\Drupal\rti_gates_file_manager\Controller\RTIGatesFileManagerController::getEvent'
+  requirements:
+    _permission: 'access content'

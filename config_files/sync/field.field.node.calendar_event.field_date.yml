@@ -1,0 +1,26 @@
+uuid: 431c7d2b-85f7-45e3-afd6-5efcf1f7b900
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.calendar_event
+  module:
+    - smart_date
+id: node.calendar_event.field_date
+field_name: field_date
+entity_type: node
+bundle: calendar_event
+label: date
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: ''
+    default_date: ''
+    default_duration_increments: "30\r\n60|1 hour\r\n90\r\n120|2 hours\r\ncustom"
+    default_duration: 60
+default_value_callback: ''
+settings: {  }
+field_type: smartdate

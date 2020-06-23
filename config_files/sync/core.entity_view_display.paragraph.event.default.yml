@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.event.field_event_types
-    - field.field.paragraph.event.field_guests
     - field.field.paragraph.event.field_locations
     - paragraphs.paragraphs_type.event
   module:
@@ -20,14 +19,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
-    region: content
-  field_guests:
-    weight: 1
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_locations:
     weight: 2

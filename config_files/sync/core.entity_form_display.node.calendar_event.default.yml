@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.calendar_event.body
+    - field.field.node.calendar_event.field_add_guestss
+    - field.field.node.calendar_event.field_date
     - field.field.node.calendar_event.field_date_time
     - field.field.node.calendar_event.field_event
     - node.type.calendar_event
@@ -11,6 +13,7 @@ dependencies:
     - datetime
     - paragraphs
     - path
+    - smart_date
     - text
 id: node.calendar_event.default
 targetEntityType: node
@@ -33,6 +36,23 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_guestss:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Guest name'
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_date:
+    weight: 125
+    settings:
+      modal: false
+    third_party_settings: {  }
+    type: smartdate_default
+    region: content
   field_date_time:
     weight: 122
     settings: {  }

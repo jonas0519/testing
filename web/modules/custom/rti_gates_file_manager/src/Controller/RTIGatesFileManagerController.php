@@ -61,6 +61,14 @@ class RTIGatesFileManagerController extends ControllerBase {
        return  $response;
     }
 
+    public function getEvent(Request $request) {
+        
+        $markup = "this is test";
+        $output = "<div id='ajax-target'>$markup</div>";
+        return ['#markup' => $output];
+
+    }
+
     public function upload(Request $request) {
     //     $options = [
     //         'dialogClass' => 'popup-dialog-class',

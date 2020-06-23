@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbdc182f475394202742a7769361a070",
+    "content-hash": "39b1d3219331ffc3ae4be79a2074a1e4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1440,6 +1440,55 @@
             }
         },
         {
+            "name": "drupal/fullcalendar_view",
+            "version": "5.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fullcalendar_view.git",
+                "reference": "5.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fullcalendar_view-5.0.3.zip",
+                "reference": "5.0.3",
+                "shasum": "ff32a5743c0abe5729553f67c84558008fabbcfd"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "5.0.3",
+                    "datestamp": "1591919250",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mingsong",
+                    "homepage": "https://www.drupal.org/user/2986445"
+                }
+            ],
+            "description": "This is a lightweight View plugin module that provides a calendar view format powered by FullCalendar JavaScript.",
+            "homepage": "http://drupal.org/project/fullcalendar_view",
+            "keywords": [
+                "Drupal",
+                "fullcalendar_view"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/fullcalendar_view",
+                "issues": "http://drupal.org/project/issues/fullcalendar_view"
+            }
+        },
+        {
             "name": "drupal/group",
             "version": "1.0.0-rc5",
             "source": {
@@ -1489,6 +1538,117 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/group",
                 "issues": "https://drupal.org/project/issues/group"
+            }
+        },
+        {
+            "name": "drupal/hierarchical_taxonomy_menu",
+            "version": "1.39.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/hierarchical_taxonomy_menu.git",
+                "reference": "8.x-1.39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/hierarchical_taxonomy_menu-8.x-1.39.zip",
+                "reference": "8.x-1.39",
+                "shasum": "fb367beabfc5fa5c41c031c782f1ab8bc7b56567"
+            },
+            "require": {
+                "drupal/core": "^8.6 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.39",
+                    "datestamp": "1591131625",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Goran Nikolovski",
+                    "homepage": "https://gorannikolovski.com",
+                    "email": "goran@gorannikolovski.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create menus from taxonomy terms.",
+            "homepage": "https://www.drupal.org/project/hierarchical_taxonomy_menu",
+            "support": {
+                "source": "https://git.drupalcode.org/project/hierarchical_taxonomy_menu",
+                "issues": "https://www.drupal.org/project/issues/hierarchical_taxonomy_menu",
+                "email": "goran@gorannikolovski.com"
+            }
+        },
+        {
+            "name": "drupal/modal_blocks",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/modal_blocks.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/modal_blocks-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "32131d756b79bf06dcb7d9305a16b3eb5a0d9327"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1521729480",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Munavijayalakshmi",
+                    "homepage": "https://www.drupal.org/user/3508025"
+                },
+                {
+                    "name": "chishah92",
+                    "homepage": "https://www.drupal.org/user/2866197"
+                },
+                {
+                    "name": "krknth",
+                    "homepage": "https://www.drupal.org/user/2659743"
+                },
+                {
+                    "name": "neeraprajapati",
+                    "homepage": "https://www.drupal.org/user/3544909"
+                },
+                {
+                    "name": "nishantkumar155",
+                    "homepage": "https://www.drupal.org/user/3021129"
+                }
+            ],
+            "description": "Modal Blocks module displays a block or set of blocks in as modal dialog in a page.",
+            "homepage": "https://www.drupal.org/project/modal_blocks",
+            "support": {
+                "source": "https://git.drupalcode.org/project/modal_blocks"
             }
         },
         {
@@ -1682,6 +1842,134 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/smart_date",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smart_date.git",
+                "reference": "8.x-2.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smart_date-8.x-2.8.zip",
+                "reference": "8.x-2.8",
+                "shasum": "4d381a15f861ce52f689021402f4a4f06d570ea8"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "php": "^7.1",
+                "simshaun/recurr": "^4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.8",
+                    "datestamp": "1591917860",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
+                },
+                {
+                    "name": "mparker17",
+                    "homepage": "https://www.drupal.org/user/536298"
+                },
+                {
+                    "name": "stefan.korn",
+                    "homepage": "https://www.drupal.org/user/1942204"
+                }
+            ],
+            "description": "Adds app-like date and recurring date functionality.",
+            "homepage": "https://www.drupal.org/project/smart_date",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/smart_date",
+                "issues": "https://www.drupal.org/project/issues/smart_date",
+                "documentation": "https://www.drupal.org/docs/contributed-modules/smart-date"
+            }
+        },
+        {
+            "name": "drupal/smtp",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smtp.git",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smtp-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "0dde6db7969a746c5e50a0553c7948f0480f64c6"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9",
+                "phpmailer/phpmailer": "~6.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1589493632",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "LukeLast",
+                    "homepage": "https://www.drupal.org/user/30151"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "josesanmartin",
+                    "homepage": "https://www.drupal.org/user/72012"
+                },
+                {
+                    "name": "oadaeh",
+                    "homepage": "https://www.drupal.org/user/4649"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
+                },
+                {
+                    "name": "yettyn",
+                    "homepage": "https://www.drupal.org/user/93281"
+                }
+            ],
+            "description": "Allow for site emails to be sent through an SMTP server of your choice.",
+            "homepage": "https://www.drupal.org/project/smtp",
+            "support": {
+                "source": "https://git.drupalcode.org/project/smtp",
+                "issues": "https://www.drupal.org/project/issues/smtp"
             }
         },
         {
@@ -2013,12 +2301,12 @@
             "version": "0.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/njh/easyrdf.git",
+                "url": "https://github.com/easyrdf/easyrdf.git",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njh/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
+                "url": "https://api.github.com/repos/easyrdf/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "shasum": ""
             },
@@ -2638,6 +2926,74 @@
             "time": "2015-02-10T20:07:52+00:00"
         },
         {
+            "name": "phpmailer/phpmailer",
+            "version": "v6.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
+                "reference": "c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3",
+                "reference": "c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-filter": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.2",
+                "friendsofphp/php-cs-fixer": "^2.2",
+                "phpunit/phpunit": "^4.8 || ^5.7"
+            },
+            "suggest": {
+                "ext-mbstring": "Needed to send email in multibyte encoding charset",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
+                }
+            ],
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "funding": [
+                {
+                    "url": "https://github.com/synchro",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-05-27T12:24:03+00:00"
+        },
+        {
             "name": "psr/container",
             "version": "1.0.0",
             "source": {
@@ -2822,6 +3178,60 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "simshaun/recurr",
+            "version": "v4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simshaun/recurr.git",
+                "reference": "d6f85ec8652366f45f6d1ba07292c9653939631a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simshaun/recurr/zipball/d6f85ec8652366f45f6d1ba07292c9653939631a",
+                "reference": "d6f85ec8652366f45f6d1ba07292c9653939631a",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/collections": "~1.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Recurr\\": "src/Recurr/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shaun Simmons",
+                    "email": "shaun@shaun.pub",
+                    "homepage": "https://shaun.pub"
+                }
+            ],
+            "description": "PHP library for working with recurrence rules",
+            "homepage": "https://github.com/simshaun/recurr",
+            "keywords": [
+                "dates",
+                "events",
+                "recurrence",
+                "recurring",
+                "rrule"
+            ],
+            "time": "2019-11-18T17:48:08+00:00"
         },
         {
             "name": "stack/builder",
@@ -4719,7 +5129,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/calendar": 15,
-        "drupal/group": 5
+        "drupal/group": 5,
+        "drupal/smtp": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,

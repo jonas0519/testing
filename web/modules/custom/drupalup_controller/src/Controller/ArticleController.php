@@ -5,8 +5,27 @@ namespace Drupal\drupalup_controller\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Link;
 use Drupal\Core\Url;
+use Drupal\Core\Block\BlockBase;
+use Drupal\block\Entity\Block;
+use Drupal\hierarchical_taxonomy_menu\Plugin\Block\HierarchicalTaxonomyMenuBlock;
 
 class ArticleController {
+
+  public function content() {
+    $block = \Drupal\block\Entity\Block::load('hierarchicaltaxonomymenu');
+    $block_content = \Drupal::entityManager()
+      ->getViewBuilder('block')
+      ->view($block);
+
+          return array(
+        '#type' => 'container',
+        '#attributes' => array(
+          'class' => array("Myclass"),
+        ),
+        "element-content" => $block_content,
+        '#weight' => 0,
+      );
+  }
 
   public function page() {
 
@@ -80,6 +99,42 @@ class ArticleController {
     return $output;
   }
 
+  public function render_block () {
+
+/*
+// Get blocks definition
+
+     //$config = \Drupal::config('block.block.hierarchicaltaxonomymenu'));
+     //$taxMenu = new HierarchicalTaxonomyMenuBlock($config, 'hierarchical_taxonomy_menu', 'menu');
+      //return $taxMenu->build();
+      $block_manager = \Drupal::service('plugin.manager.block');
+        // You can hard code configuration or you load from settings.
+        $config = [];
+
+        $plugin_block = $block_manager->createInstance('hierarchical_taxonomy_menu', $config);
+
+        // Some blocks might implement access check.
+        $access_result = $plugin_block->access(\Drupal::currentUser());
+        // Return empty render array if user doesn't have access.
+        // $access_result can be boolean or an AccessResult class
+        if (is_object($access_result) && $access_result->isForbidden() || is_bool($access_result) && !$access_result) {
+          // You might need to add some cache tags/contexts.
+          return [];
+        }
+        $render = $plugin_block->build();
+        // In some cases, you need to add the cache tags/context depending on
+        // the block implemention. As it's possible to add the cache tags and
+        // contexts in the render method and in ::getCacheTags and 
+        // ::getCacheContexts methods.
+        return $render;
+*/
+
+      $bid = '3'; // Get the block id through config, SQL or some other means
+      $block = \Drupal\block_content\Entity\BlockContent::load($bid);
+      $render = \Drupal::entityTypeManager()->getViewBuilder('block_content')->view($block);
+      return $render;
+      
+  }
 
   
 }

@@ -1,0 +1,25 @@
+uuid: e7499cc1-fa81-4ceb-8b55-a1862999823a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.file_info
+  module:
+    - views
+  theme:
+    - rti_skeleton
+id: views_block__file_info_view_block_1_file_info
+theme: rti_skeleton
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:file_info-view_block_1_file_info'
+settings:
+  id: 'views_block:file_info-view_block_1_file_info'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

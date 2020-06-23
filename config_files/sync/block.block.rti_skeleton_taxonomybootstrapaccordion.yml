@@ -1,0 +1,24 @@
+uuid: 03fbb5e6-94bd-4e90-a999-e45d2103a438
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_bootstrap_accordion
+  theme:
+    - rti_skeleton
+id: rti_skeleton_taxonomybootstrapaccordion
+theme: rti_skeleton
+region: sidebar_second
+weight: 0
+provider: null
+plugin: taxonomy_menu_block
+settings:
+  id: taxonomy_menu_block
+  label: 'Taxonomy Bootstrap Accordion'
+  provider: taxonomy_bootstrap_accordion
+  label_display: visible
+  vocabs:
+    directory: directory
+    project: 0
+    tags: 0
+visibility: {  }

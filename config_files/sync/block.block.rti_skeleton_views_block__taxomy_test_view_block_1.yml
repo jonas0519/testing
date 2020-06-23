@@ -1,0 +1,25 @@
+uuid: f4f13e84-539c-49c4-b0a0-952d612f3e7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.taxomy_test_view
+  module:
+    - views
+  theme:
+    - rti_skeleton
+id: rti_skeleton_views_block__taxomy_test_view_block_1
+theme: rti_skeleton
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:taxomy_test_view-block_1'
+settings:
+  id: 'views_block:taxomy_test_view-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

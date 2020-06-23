@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.download_files.field_directory
     - field.field.node.download_files.field_project
-    - field.field.node.download_files.field_project1
     - field.field.node.download_files.field_upload_file
     - node.type.download_files
   module:
@@ -24,5 +23,4 @@ content:
 hidden:
   field_directory: true
   field_project: true
-  field_project1: true
   field_upload_file: true

@@ -1,0 +1,5 @@
+name: MyCustome block ajax
+type: module
+description: custom block Ajax API
+core: 8.x
+package: Custom

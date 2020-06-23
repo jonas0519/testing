@@ -1,0 +1,25 @@
+uuid: d504207c-3d22-4b7e-a8b5-39cda2d068ec
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8fec33c7-1403-41ed-8715-26420f4c1851'
+  module:
+    - block_content
+  theme:
+    - rti_skeleton
+id: mytest_2
+theme: rti_skeleton
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:8fec33c7-1403-41ed-8715-26420f4c1851'
+settings:
+  id: 'block_content:8fec33c7-1403-41ed-8715-26420f4c1851'
+  label: 'My Test'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

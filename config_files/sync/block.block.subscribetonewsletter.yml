@@ -1,0 +1,20 @@
+uuid: 4bb822a5-8df6-401f-b97a-ba29a40d078e
+langcode: en
+status: true
+dependencies:
+  module:
+    - helloworld
+  theme:
+    - bartik
+id: subscribetonewsletter
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: helloworld_subsribe_form_button
+settings:
+  id: helloworld_subsribe_form_button
+  label: 'Subscribe to Newsletter'
+  provider: helloworld
+  label_display: visible
+visibility: {  }

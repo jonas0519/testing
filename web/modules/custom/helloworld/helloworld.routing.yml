@@ -5,3 +5,91 @@ helloworld.content:
     _title: 'Hello world'
   requirements:
     _permission: 'access content'
+
+helloworld.multistep_form:
+  path: '/multistep-form'
+  defaults:
+    _form: '\Drupal\helloworld\Form\MultiStepForm'
+    _title: 'Subscribe to newsletter'
+  requirements:
+    _permission: 'access content'
+
+helloworld.block_rendered:
+  path: '/block-rendered'
+  defaults:
+    _controller: '\Drupal\helloworld\Controller\HelloworldController::render_block'
+    _title: 'block rendered'
+  requirements:
+    _permission: 'access content'
+
+helloworld.form_ajax:
+  path: '/admin/ajax_module'
+  defaults:
+    _form: 'Drupal\helloworld\Form\AjaxModuleForm'
+    _title: 'Ajax Module'
+  requirements:
+    _permission: 'access administration pages'
+
+helloworld.ajax_submit_demo:
+  path: '/ajax-form-submit'
+  defaults:
+    _form:  '\Drupal\helloworld\Form\AjaxSubmitDemo'
+    _title: 'Ajax Submit Form'
+  requirements:
+    _permission: 'access content'
+
+helloworld.mymodule_ajax:
+  path: '/mymodule-ajax'
+  defaults:
+    _form:  '\Drupal\helloworld\Form\AjaxModuleForm'
+    _title: 'My Module ajax'
+  requirements:
+    _permission: 'access content'
+
+helloworld.add_field_ajax:
+  path: '/add-field-to-a-form-with-ajax'
+  defaults:
+    _form:  '\Drupal\helloworld\Form\AddFieldAjaxForm'
+    _title: 'Add Field to a form with Ajax'
+  requirements:
+    _permission: 'access content'
+
+helloworld.ajax_add_more:
+  path: '/ajax-add-more'
+  defaults:
+    _form:  '\Drupal\helloworld\Form\AjaxAddMore'
+    _title: 'Ajax Add more'
+  requirements:
+    _permission: 'access content'
+
+helloworld.ajax_add_custom:
+  path: '/ajax-add-more-custom'
+  defaults:
+    _form:  '\Drupal\helloworld\Form\AddMoreCustom'
+    _title: 'Ajax Add more custom'
+  requirements:
+    _permission: 'access content'
+
+helloworld.ajax_add_another_item:
+  path: '/ajax-add-nother-item'
+  defaults:
+    _form:  '\Drupal\helloworld\Form\AddAnotherItem'
+    _title: 'Ajax Add more custom'
+  requirements:
+    _permission: 'access content'
+
+helloworld.form_table_add_row:
+  path: '/form-table-add-row'
+  defaults:
+    _form: 'Drupal\helloworld\Form\FormTableAddMoreRow'
+    _title: 'Form Table Add More Rows'
+  requirements:
+    _permission: 'access content'
+
+helloworld.change_username:
+  path: '/change-username'
+  defaults:
+    _form: 'Drupal\helloworld\Form\ChangeUsername'
+    _title: 'Change Username'
+  requirements:
+    _permission: 'access content'
