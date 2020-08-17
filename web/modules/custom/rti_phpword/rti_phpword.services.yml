@@ -1,0 +1,13 @@
+services:
+  rti_phpword.writer:
+    class: PhpOffice\PhpWord\PhpWord
+  rti_phpword.font:
+    class: PhpOffice\PhpWord\Style\Font
+  rti_phpword.html_reader:
+    class: PhpOffice\PhpWord\Reader\HTML
+  rti_phpword.html_writer:
+    class: PhpOffice\PhpWord\Writer\HTML
+  rti_phpword.doc_reader:
+    class: PhpOffice\PhpWord\Reader\Word2007
+  rti_phpword.doc_writer:
+    class: PhpOffice\PhpWord\Writer\Word2007

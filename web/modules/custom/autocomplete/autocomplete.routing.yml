@@ -1,0 +1,7 @@
+autocomplete.autocomplete.articles:
+  path: '/admin/autocomplete/autocomplete/articles'
+  defaults:
+    _controller: '\Drupal\autocomplete\Controller\ArticleAutoCompleteController::handleAutocomplete'
+    _format: json
+  requirements:
+    _permission: 'access content'

@@ -56,6 +56,22 @@ class ChangeUsername extends FormBase {
       '#suffix' => '</div>',
     );
 
+
+  $form['range'] = array(
+    '#type' => 'fieldset',
+    '#prefix' => '<div class="myclass">',
+ );
+
+  $form['range']['min'] = array(
+     '#type' => 'textfield',
+     '#title' => 'Address'
+  );
+  $form['range']['address2'] = array(
+     '#type' => 'textfield',
+     '#title' => 'Address',
+     '#suffix' => '</div>',
+  );
+
     return $form;
   }
   function methodChangeAjax($form, FormStateInterface $form_state) {

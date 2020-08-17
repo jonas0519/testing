@@ -93,3 +93,65 @@ helloworld.change_username:
     _title: 'Change Username'
   requirements:
     _permission: 'access content'
+
+helloworld.form_event_update:
+  path: '/event-calendar/{nid}'
+  defaults:
+    _form: 'Drupal\helloworld\Form\FormEventCalendarUpdate'
+    _title: 'Event Calendar Update'
+  requirements:
+    _permission: 'access content'
+
+helloworld.form_fee_form:
+  path: '/fee-form'
+  defaults:
+    _form: 'Drupal\helloworld\Form\FeeForm'
+    _title: 'Fee Form'
+  requirements:
+    _permission: 'access content'
+
+helloworld.edit_h_file:
+  path: '/edit-h-file/{fid}'
+  defaults:
+    _title: 'Edit File'
+    _form: '\Drupal\helloworld\Form\EditFileForm'
+  requirements:
+    _permission: 'access content'
+
+helloworld.filter_default_form:
+  path: '/default-form'
+  defaults:
+    _title: 'default'
+    _form: '\Drupal\helloworld\Form\DefaultForm'
+  requirements:
+    _permission: 'access content'
+
+helloworld.message_modal:
+  path: '/message-modal'
+  defaults:
+    _title: 'Message Modal'
+    _form: '\Drupal\helloworld\Form\MessageModal'
+  requirements:
+    _permission: 'access content'
+
+helloworld.test_modal_form:
+ path: '/modal/test-modal-form'
+ defaults:
+   _form: '\Drupal\helloworld\Form\TestModalForm'
+ requirements:
+     _access: 'TRUE'
+
+helloworld.add_folder:
+  path: '/add/folder'
+  defaults:
+    _title: 'Add Folder'
+    _form: '\Drupal\helloworld\Form\AddFolderForm'
+  requirements:
+    _permission: 'access content'
+
+helloworld.self_populate:
+  path: '/self-populate'
+  defaults:
+    _form: '\Drupal\helloworld\Form\SelfPopulateForm'
+  requirements:
+    _permission: 'access content'

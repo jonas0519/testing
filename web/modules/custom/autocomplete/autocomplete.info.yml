@@ -1,0 +1,5 @@
+name: autocomplete
+type: module
+description: 'Auto Complete module'
+package: Custom
+core: 8.x

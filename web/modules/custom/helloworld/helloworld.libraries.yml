@@ -3,6 +3,8 @@ multistep_form:
     css/multistep_form.css: {}
   js:
     scripts/multistep_form.js: {}
+    js/js.js: {}
+    js/textarea.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once

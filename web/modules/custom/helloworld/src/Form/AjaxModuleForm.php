@@ -35,6 +35,7 @@ class AjaxModuleForm extends FormBase {
     	),
   	),
 	);
+	
 	return $form;
   }
  

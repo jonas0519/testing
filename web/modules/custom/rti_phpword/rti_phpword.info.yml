@@ -1,0 +1,5 @@
+name: RTI phpword
+type: module
+description: 'RTI phpword'
+package: Custom
+core: 8.x

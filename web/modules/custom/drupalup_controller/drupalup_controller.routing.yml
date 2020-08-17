@@ -29,3 +29,12 @@ drupalup_controller.content:
   requirements:
     _permissions: 'access content'
     _access: 'TRUE'
+
+
+drupalup_controller.node_edit1:
+  path: '/node/{nid}/edit'
+  defaults:
+    _controller: '\Drupal\drupalup_controller\Controller\ArticleController::edit_node'
+  requirements:
+    _permissions: 'access content'
+    _access: 'TRUE'

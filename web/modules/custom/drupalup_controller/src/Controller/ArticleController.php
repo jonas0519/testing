@@ -8,6 +8,7 @@ use Drupal\Core\Url;
 use Drupal\Core\Block\BlockBase;
 use Drupal\block\Entity\Block;
 use Drupal\hierarchical_taxonomy_menu\Plugin\Block\HierarchicalTaxonomyMenuBlock;
+use Drupal\node\Entity\Node;
 
 class ArticleController {
 
@@ -134,6 +135,13 @@ class ArticleController {
       $render = \Drupal::entityTypeManager()->getViewBuilder('block_content')->view($block);
       return $render;
       
+  }
+
+  function edit_node() {
+ 
+    $nodeObj = Node::load(NID); // Loading the Node by its Id.
+    $nodeObj->set('title', 'UPDATE_TITLE');
+    $nodeObj->save(); // Saving the Node object.
   }
 
   

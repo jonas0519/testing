@@ -1,0 +1,14 @@
+# Create library asset name
+trade-steps:
+  version: 1.x
+  css:
+    layout:
+      css/trade-steps-layout.css: {}
+    theme:
+      css/trade-steps-theme.css: {}
+  js:
+    js/trade-steps.js: {}
+    
+  # Add core Drupal Ajax library as a dependency for this library.
+  dependencies:
+  - core/jquery

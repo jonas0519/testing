@@ -1,0 +1,31 @@
+tradesteps.my_page:
+  path: '/my_page'
+  defaults:
+    _controller: 'Drupal\tradesteps\Controller\MyPage::getContent'
+    _title: 'Hello world'
+  requirements:
+    _permission: 'access content'
+    
+tradesteps.my_form:
+  path: '/my_form'
+  defaults:
+    _form: 'Drupal\tradesteps\Form\MyForm'
+    _title: 'My Form'
+  requirements:
+    _permission: 'access content'
+    
+tradesteps.my_form_ajax:
+  path: '/my_form_ajax1'
+  defaults:
+    _form: 'Drupal\tradesteps\Form\MyFormAjax'
+    _title: 'My Form Ajax'
+  requirements:
+    _permission: 'access content'
+
+tradesteps.my_form_run_js:
+  path: '/my_form_run_js'
+  defaults:
+    _form: 'Drupal\tradesteps\Form\MyFormRunJs'
+    _title: 'My Form Run JS'
+  requirements:
+    _permission: 'access content'
