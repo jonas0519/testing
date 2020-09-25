@@ -1,0 +1,62 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Link;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\user\Entity\User;
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+
+/* function helloworld_form_user_login_form_alter(&$form, FormStateInterface $form_state) {
+    $form['#submit'][] = 'helloworld_user_login_submit';
+  }
+  
+
+  function helloworld_user_login_submit(&$form, FormStateInterface $form_state) {
+    $url = Url::fromRoute('helloworld.add_folder');
+  
+    // Check if a destination was set, probably on an exception controller.
+    // @see \Drupal\user\Form\UserLoginForm::submitForm()
+    $request = \Drupal::service('request_stack')->getCurrentRequest();
+    if (!$request->request->has('destination')) {
+      $form_state->setRedirectUrl($url);
+    }
+    else {
+      $request->query->set('destination', $request->request->get('destination'));
+    }
+  }
+  
+ */
+/* 
+function login_redirect_user_login($account) {
+    // We want to redirect user on login.
+    //$response = new RedirectResponse("localhost/user/{%}"); //go to user page
+    $message ="logged in";
+    \Drupal::logger('my_module')->notice($message);
+    $url =  \Drupal\Core\Url::fromRoute('<front>'); // go to front page
+    $response = new RedirectResponse($url->toString());
+    $response->send();
+    return;
+  }  */
+
+
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function helloworld_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+    // Alter login form and add own custom submit handler.
+    $form['#submit'][] = 'helloworld_user_login_form_submit';
+}
+
+/**
+ * Custom submit handler for login form.
+ */
+function helloworld_user_login_form_submit($form, FormStateInterface $form_state) {
+    $form_state->setRedirect('<front>');
+}

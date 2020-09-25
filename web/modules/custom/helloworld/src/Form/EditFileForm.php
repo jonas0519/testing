@@ -27,6 +27,7 @@ class EditFileForm extends FormBase {
     $fid = $parameteres->get('fid');
     $file = File::load($fid);
     $file_link = $file->getFileUri();
+    
     if($file->getMimeType() == 'text/plain') {
       $file_content_value = file_get_contents($file_link);
     }

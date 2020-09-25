@@ -139,7 +139,7 @@ class ArticleController {
 
   function edit_node() {
  
-    $nodeObj = Node::load(NID); // Loading the Node by its Id.
+   $nodeObj = Node::load(NID); // Loading the Node by its Id.
     $nodeObj->set('title', 'UPDATE_TITLE');
     $nodeObj->save(); // Saving the Node object.
   }

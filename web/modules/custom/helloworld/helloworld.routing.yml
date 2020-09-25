@@ -147,7 +147,7 @@ helloworld.add_folder:
     _title: 'Add Folder'
     _form: '\Drupal\helloworld\Form\AddFolderForm'
   requirements:
-    _permission: 'access content'
+    _permission: 'access user profiles'
 
 helloworld.self_populate:
   path: '/self-populate'
