@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.download_files.field_directory
     - field.field.node.download_files.field_project
+    - field.field.node.download_files.field_tags
     - field.field.node.download_files.field_upload_file
     - node.type.download_files
   module:
@@ -32,6 +33,16 @@ content:
       form_display_mode: default
       default_paragraph_type: project
     third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_upload_file:
     weight: 1

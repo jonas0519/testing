@@ -11,7 +11,7 @@ dependencies:
 id: views_block__total_files_block_1
 theme: bartik
 region: sidebar_first
-weight: -10
+weight: -11
 provider: null
 plugin: 'views_block:total_files-block_1'
 settings:

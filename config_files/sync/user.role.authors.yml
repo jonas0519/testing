@@ -1,0 +1,9 @@
+uuid: f07990dc-0e52-4bfd-a1e1-e07d945bad22
+langcode: en
+status: true
+dependencies: {  }
+id: authors
+label: Authors
+weight: 4
+is_admin: null
+permissions: {  }

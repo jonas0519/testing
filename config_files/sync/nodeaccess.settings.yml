@@ -1,0 +1,196 @@
+grants:
+  view: 1
+  edit: 1
+  delete: 1
+priority: 0
+preserve: 1
+_core:
+  default_config_hash: Zno4MMkbreZeJZgnY0DXCPksXkuYye3MyIFlVuh-xLc
+appointment:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+article:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+basic_content_type:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+book_detail:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+calendar_event:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+download_files:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+event_types:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+locked_content_type:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+page:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+test:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+testtest:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+upload_word_files:
+  anonymous:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  authenticated:
+    grant_view: 1
+    grant_update: 0
+    grant_delete: 0
+  author:
+    grant_view: 0
+    grant_update: 0
+    grant_delete: 0
+role_alias:
+  anonymous:
+    alias: 'Anonymous user'
+    name: 'Anonymous user'
+    weight: 0
+    allow: 0
+  authenticated:
+    alias: 'Authenticated user'
+    name: 'Authenticated user'
+    weight: 0
+    allow: 0
+  administrator:
+    alias: Administrator
+    name: Administrator
+    weight: 0
+    allow: 0
+  folder_create:
+    alias: 'Folder Create'
+    name: 'Folder Create'
+    weight: 0
+    allow: 0
+  authors:
+    alias: Authors
+    name: Authors
+    weight: 0
+    allow: 0
+role_map:
+  anonymous: 1
+  authenticated: 2
+  administrator: 3
+  folder_create: 4
+  authors: 5

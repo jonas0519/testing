@@ -9,7 +9,7 @@ dependencies:
 id: mycustomblock_2
 theme: bartik
 region: sidebar_first
-weight: -7
+weight: -8
 provider: null
 plugin: block_mycustomblock
 settings:

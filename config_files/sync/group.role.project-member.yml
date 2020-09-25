@@ -1,0 +1,14 @@
+uuid: 00597bc1-96c4-4339-ae36-99661afd018e
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.project
+id: project-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: project
+permissions_ui: true
+permissions: {  }

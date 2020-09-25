@@ -1,0 +1,22 @@
+uuid: dfedb874-acc4-4b5c-8325-59b2846a6952
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.event_types
+id: node.event_types.promote
+field_name: promote
+entity_type: node
+bundle: event_types
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

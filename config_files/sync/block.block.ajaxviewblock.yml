@@ -1,0 +1,20 @@
+uuid: 719f82d1-9972-49a9-b727-ac24b7f80747
+langcode: en
+status: true
+dependencies:
+  module:
+    - ajax_view_demo
+  theme:
+    - bartik
+id: ajaxviewblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: ajax_view_block
+settings:
+  id: ajax_view_block
+  label: 'Ajax view block'
+  provider: ajax_view_demo
+  label_display: visible
+visibility: {  }

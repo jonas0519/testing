@@ -1,0 +1,10 @@
+uuid: ed85f40d-e243-47db-92a3-13d5d56a3370
+langcode: en
+status: true
+dependencies: {  }
+id: project
+label: Project
+description: ''
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

@@ -1,72 +1,142 @@
 module:
+  IMPORT_EXAMPLE: 0
+  actions_permissions: 0
+  ajax_example: 0
+  ajax_form_submit: 0
+  ajax_view_demo: 0
+  autocomplete: 0
   automated_cron: 0
+  batch_example: 0
   big_pipe: 0
   block: 0
   block_content: 0
+  block_example: 0
   book_detail: 0
   breakpoint: 0
+  cache_example: 0
   calendar: 0
   calendar_datetime: 0
+  chosen: 0
+  chosen_field: 0
+  chosen_lib: 0
   ckeditor: 0
+  ckeditor_font: 0
   color: 0
+  colorbutton: 0
   comment: 0
   config: 0
+  config_entity_example: 0
   contact: 0
+  content_entity_example: 0
   contextual: 0
+  cron_example: 0
+  cshs: 0
+  csv_serialization: 0
   ctools: 0
+  ctools_views: 0
   datetime: 0
   dblog: 0
+  dbtng_example: 0
   demomail: 0
   devel: 0
   devel_generate: 0
+  doc_serialization: 0
   drupalup_controller: 0
   drupalup_jsset: 0
   dynamic_page_cache: 0
   editor: 0
+  editor_file: 0
+  email_example: 0
   entity: 0
   entity_reference_revisions: 0
+  events_example: 0
+  examples: 0
   field: 0
+  field_example: 0
+  field_permission_example: 0
   field_ui: 0
   file: 0
+  file_example: 0
   filter: 0
+  flipping_book: 0
+  form_api_example: 0
+  fullcalendar: 0
+  fullcalendar_legend: 0
+  fullcalendar_options: 0
   fullcalendar_view: 0
+  gdoc_field: 0
   gnode: 0
+  googledrive_doc_viewer: 0
   grolesync: 0
   group: 0
   helloworld: 0
   help: 0
   hierarchical_taxonomy_menu: 0
   history: 0
+  hooks_example: 0
   image: 0
+  js_example: 0
   kint: 0
   link: 0
+  menu_example: 0
   menu_ui: 0
+  modal: 0
   modal_blocks: 0
   modal_form_example: 0
   mycustomblock: 0
+  mysearch: 0
   node: 0
+  node_type_example: 0
+  nodeaccess: 0
   options: 0
   other_view_filter: 0
   page_cache: 0
+  page_example: 0
+  pager_example: 0
+  panelbutton: 0
   path: 0
   path_alias: 0
+  pdf: 0
+  phpunit_example: 0
+  phpword: 0
+  plugin_type_example: 0
+  queue_example: 0
   quickedit: 0
   rdf: 0
+  render_example: 0
+  rest: 0
+  rti_phpword: 0
+  sample_permissions: 0
   search: 0
+  serialization: 0
+  session_example: 0
   shortcut: 0
+  shortend_links: 0
+  shs: 0
+  shs_chosen: 0
   smart_date: 0
   smtp: 0
+  stream_wrapper_example: 0
   system: 0
+  tabledrag_example: 0
+  tablesort_example: 0
   taxonomy: 0
   taxonomy_bootstrap_accordion: 0
   text: 0
+  time_field: 0
   token: 0
   toolbar: 0
   tour: 0
+  tour_example: 0
+  tradesteps: 0
   user: 0
   views_accordion: 0
   views_autocomplete_filters: 0
+  views_bulk_operations: 0
+  views_bulk_operations_example: 0
+  views_data_export: 0
   views_exposed_filter_blocks: 0
+  views_taxonomy_term_name_depth: 0
   views_templates: 0
   views_ui: 0
   menu_link_content: 1
@@ -80,6 +150,7 @@ theme:
   bartik: 0
   seven: 0
   rti_skeleton: 0
+  newsplus_lite: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

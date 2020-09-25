@@ -9,6 +9,10 @@ dependencies:
     - field.field.node.calendar_event.field_date
     - field.field.node.calendar_event.field_date_time
     - field.field.node.calendar_event.field_event
+    - field.field.node.calendar_event.field_event_types
+    - field.field.node.calendar_event.field_event_types1
+    - field.field.node.calendar_event.field_location
+    - field.field.node.calendar_event.field_to
     - node.type.calendar_event
   module:
     - text
@@ -36,3 +40,7 @@ hidden:
   field_date: true
   field_date_time: true
   field_event: true
+  field_event_types: true
+  field_event_types1: true
+  field_location: true
+  field_to: true

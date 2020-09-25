@@ -1,0 +1,17 @@
+uuid: f7826b77-0878-4390-936c-8bc35d3042f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.project
+  enforced:
+    config:
+      - user.role.authors
+id: project-5e6eb346c
+label: Authors
+weight: 4
+internal: true
+audience: outsider
+group_type: project
+permissions_ui: false
+permissions: {  }

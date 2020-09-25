@@ -1,0 +1,37 @@
+uuid: 28c69710-5c30-4bc8-844f-4c3cb700683f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.upload_word_files.body
+    - field.field.node.upload_word_files.field_upload_word_files
+    - node.type.upload_word_files
+  module:
+    - gdoc_field
+    - text
+    - user
+id: node.upload_word_files.default
+targetEntityType: node
+bundle: upload_word_files
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_upload_word_files:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: gdoc_field
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

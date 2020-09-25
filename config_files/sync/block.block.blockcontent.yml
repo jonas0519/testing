@@ -11,7 +11,7 @@ dependencies:
 id: blockcontent
 theme: bartik
 region: sidebar_first
-weight: -2
+weight: -1
 provider: null
 plugin: 'block_content:2007e2be-a626-4375-bffe-3be1ca7d3bd9'
 settings:

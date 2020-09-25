@@ -1,0 +1,23 @@
+uuid: 6f4de5d2-a1ae-4541-bc39-790d7c680442
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.upload_word_files
+  module:
+    - text
+id: node.upload_word_files.body
+field_name: body
+entity_type: node
+bundle: upload_word_files
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

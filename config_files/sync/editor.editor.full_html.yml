@@ -6,6 +6,14 @@ dependencies:
     - filter.format.full_html
   module:
     - ckeditor
+    - editor_file
+third_party_settings:
+  editor_file:
+    status: true
+    scheme: public
+    directory: inline-files
+    extensions: txt
+    max_size: ''
 _core:
   default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
 format: full_html
@@ -21,6 +29,7 @@ settings:
             - Italic
             - Strike
             - Superscript
+            - FontSize
             - Subscript
             - '-'
             - RemoveFormat
@@ -50,14 +59,30 @@ settings:
           items:
             - ShowBlocks
             - Source
+        -
+          name: Font
+          items:
+            - Styles
+        -
+          name: Color
+          items:
+            - BGColor
+            - TextColor
   plugins:
+    language:
+      language_list: un
     stylescombo:
       styles: ''
+    font:
+      font_names: ''
+      font_sizes: ''
+    colorbutton:
+      colors: ''
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

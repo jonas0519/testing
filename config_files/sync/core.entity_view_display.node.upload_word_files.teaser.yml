@@ -1,0 +1,32 @@
+uuid: 5fe1c9dc-0152-4cc0-8d77-f2efc7e701a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.upload_word_files.body
+    - field.field.node.upload_word_files.field_upload_word_files
+    - node.type.upload_word_files
+  module:
+    - text
+    - user
+id: node.upload_word_files.teaser
+targetEntityType: node
+bundle: upload_word_files
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_upload_word_files: true

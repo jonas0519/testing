@@ -1,0 +1,27 @@
+uuid: c92b9ff9-aa58-481a-9d54-51cb62782b20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_upload_word_files
+    - node.type.upload_word_files
+  module:
+    - file
+id: node.upload_word_files.field_upload_word_files
+field_name: field_upload_word_files
+entity_type: node
+bundle: upload_word_files
+label: 'Upload Word Files'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'doc docx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
