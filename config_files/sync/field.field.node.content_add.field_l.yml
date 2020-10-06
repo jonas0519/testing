@@ -1,0 +1,19 @@
+uuid: 97670827-2602-4e9a-98ee-7700b192157e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_l
+    - node.type.content_add
+id: node.content_add.field_l
+field_name: field_l
+entity_type: node
+bundle: content_add
+label: 'Last Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

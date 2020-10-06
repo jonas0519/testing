@@ -27,6 +27,7 @@ module:
   config: 0
   config_entity_example: 0
   contact: 0
+  content_add: 0
   content_entity_example: 0
   contextual: 0
   cron_example: 0

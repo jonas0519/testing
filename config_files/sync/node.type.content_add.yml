@@ -1,0 +1,18 @@
+uuid: a811be0e-1cd1-4ace-abd2-e78737d2627c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Content Add'
+type: content_add
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
