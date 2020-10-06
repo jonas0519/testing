@@ -1,0 +1,48 @@
+<!-- 1st row -->
+<div class="container-fluid padding" role="navigation">
+   <div class="row header">
+      <div class="col-3">
+          {{ page.logo }}
+      </div>
+        <div class="col-6">
+          {{ page.primary_menu }}
+        </div>
+        <div class="col-3">
+            <div class="navbar">
+                <div class="usernotification"> 
+                  <a class="active" href="#"><i class="fa fa fa-bell"></i></a>
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="flex-container">
+                  <div><a href="#"> {{ user.displayname }}</a></div>
+                  <div><a href="#"> {{ jobtitle }}</a></div>
+                </div>
+                <div class="userdropdown">
+                <a href="#"><i class="far fa-caret-square-down"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Header -->
+
+<!-- 2nd row -->
+<div class="container-fluid padding">
+    <div id="ajax-target">Ajax goes here!!!</div>
+    <a class="btn" href="#" onclick="rti_gates_file_manager_ajax_load()">Ajax Test</a>
+    <div class="row bg">
+      
+      <div class="col-9">
+ 
+        <div class="row">
+            <div class="col-3 margin-left">
+              {{ page.sidebar_second }}
+            </div>
+            <div class="col-9 rti-table padding">
+                {{ page.content }}
+            </div>
+        </div>
+      </div>
+      
+    </div>
+</div>

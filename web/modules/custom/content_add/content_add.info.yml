@@ -1,0 +1,5 @@
+name: content add
+type: module
+description: 'Content Add module'
+package: Custom
+core: 8.x

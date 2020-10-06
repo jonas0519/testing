@@ -1,0 +1,7 @@
+content_add.content_add:
+  path: '/content-add'
+  defaults:
+    _form:  '\Drupal\content_add\Form\ContentAddForm'
+    _title: 'Content Add Form'
+  requirements:
+    _permission: 'access content'
